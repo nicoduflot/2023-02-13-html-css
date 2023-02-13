@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation premiers pas en création de sites web</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Formation Premiers pas en création de sites web
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="./index.html" target="_self" title="Lien vers la page d'accueil">Accueil</a>
+            </li>
+            <li>
+                <a href="./liens.html" target="_self" title="Les liens internet">Les liens</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <header>
+                    <h2>Les liens hypertextes</h2>
+                </header>
+                <main>
+                    <h3>L'anatomie d'un lien</h3>
+                    <p>
+                        On crée un lien en utilisant la balise a (anchor => ancre).
+                        Cette balise a besoin d'attributs pour fonctionner correctement.
+                        Ces attributs définissent :
+                    </p>
+                    <ul>
+                        <li>Le document lié (page html, fichier, email, un numéro de téléphone, etc.</li>
+                        <li>La façon dont on ouvre le document lié (elle-même, un autre onglet, etc.)</li>
+                        <li>Un titre de lien, qui "explique" où mène le lien</li>
+                    </ul>
+                    <h3 id="les_attributs">Les attributs en détail</h3>
+                    <h4>Le chemin vers le document ciblé : href</h4>
+                    <p>
+                        C'est le chemin vers le document à partir de la page sur laquelle se trouve le lien.
+                    </p>
+                    <p>
+                        <a href="./frame/frame.html">le dossier "frame"</a>
+                    </p>
+                    <p>
+                        href peut aussi contenir l'identifiant d'un élément de la même page, en cliquant sur le lien on ammène en haut de l'affichage l'élément identifié, cela est souvent utilisé pour créer une table des matières en début d'un long document.
+                    </p>
+                    <p>
+                        <a href="./liens.html#les_attributs">Remonter au début de la partie "Attributs"</a>
+                    </p>
+                    <h3>Cible où sera ouverte le document ciblé : target</h3>
+                    <p>
+                        target défini la cible d'ouverture du document ciblé. la coble est un cadre (frame)
+                    </p>
+                    <p>
+                        par exemple, _self (configuration par defaut), fait ouvrir dans le cadre actuel, 
+                        _blank ouvre la page dans un nouvel onglet, _parent : ouvre le lien dans un cadre parent.
+                    </p>
+                    <p>
+                        <a href="./index.html" target="_parent">Index dans le cadre parent</a>
+                    </p>
+                    <p>
+                        Ouvrier les <a href="./frame/frameset.html">frameset</a>
+                    </p>
+                    <iframe src="./frame/frame.html" width="50%" height="200"></iframe>
+                </main>
+            </article>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
