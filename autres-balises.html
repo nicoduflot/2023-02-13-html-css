@@ -74,10 +74,11 @@
                         <li>
                             Deuxième partie
                             <ol type="a" start="3">
-                                <li>Sous partie 1</li>
-                                <ol>
-                                    <li>sous sous partie 1</li>
-                                </ol>
+                                <li>Sous partie 1
+                                    <ol>
+                                        <li>sous sous partie 1</li>
+                                    </ol>
+                                </li>
                                 <li>Sous partie 2</li>
                             </ol>
                         </li>
@@ -97,6 +98,48 @@
                             2 exemple
                         - conclusion 
                     -->
+                    <figure>
+                        <pre>
+Une liste de ce type :
+
+- intro
+- première partie
+    a une sous partie
+    b une sous partie
+    c une sous partie
+        - un exemple
+- deuxième partie
+    1 exemple
+    2 exemple
+- conclusion 
+                        </pre>
+                        <img src="./images/listes-boites-html.png" alt="représentation boîtes html de l'exercice" />
+                        <figcaption>
+                            Les "boîtes" de contenus qui représentent la nidification des balises HTML
+                        </figcaption>
+                    </figure>
+                    <h3>Correction proposée</h3>
+                    <ul>
+                        <li>intro</li>
+                        <li>première partie
+                            <ol type="a">
+                                <li>une sous partie</li>
+                                <li>une sous partie</li>
+                                <li>une sous partie
+                                    <ul>
+                                        <li>un exemple</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>deuxième partie
+                            <ol>
+                                <li>exemple</li>
+                                <li>exemple</li>
+                            </ol>
+                        </li>
+                        <li>conclusion</li>
+                    </ul>
                 </main>
             </article>
         </section>
