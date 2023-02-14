@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation premiers pas en création de sites web</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Formation Premiers pas en création de sites web
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="./index.html" target="_self" title="Lien vers la page d'accueil">Accueil</a>
+            </li>
+            <li>
+                <a href="./liens.html" target="_self" title="Les liens internet">Les liens</a>
+            </li>
+            <li>
+                <a href="./autres-balises.html" target="_self" title="Autres balises">Autres balises</a>
+            </li>
+            <li>
+                <a href="./formulaire.html" target="_self" title="Formulaires HTML">Les formulaires</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <header>
+                    <h2>Images & légendes</h2>
+                </header>
+                <main>
+                    <h2>Les formulaires</h2>
+                    <p>
+                        Les formulaires servent à récupérer des informations.
+                    </p>
+                    <h2>Exemple de formulaire et déléments de formulaire</h2>
+                    <p>
+                        un formulaire se déclare avec la balise form. Il possède des attributs, 
+                        les plus important étants la méthode (method) et l'action (action)
+                    </p>
+                    <h3>Method</h3>
+                    <p>
+                        L'attribut method défini la façon dont vont être envoyées les données inscrites dans les 
+                        éléments du formulaire : get et post
+                    </p>
+                    <ul>
+                        <li>
+                            get : les données sont transférées dans l'url selon 
+                            une combinaison ?nomVariable=variable
+                        </li>
+                        <li>
+                            Post : Les données sont envoyées dans l'entête HTTP de la page de traîtement.
+                        </li>
+                    </ul>
+                    <h3>Action</h3>
+                    <p>
+                        Détermine la page de traîtement des données du formulaire
+                    </p>
+                    <h3>Notre formulaire</h3>
+                    <form method="get" action="./formulaire.html">
+                        <fieldset>
+                            <legend>
+                                Civilité
+                            </legend>
+                            <p>
+                                <label for="nom">Nom* : </label>
+                                <input type="text" id="nom" name="nom" required placeholder="Entrez votre nom" />
+                            </p>
+                            <p>
+                                <label for="prenom">Prénom :</label> 
+                                <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" />
+                            </p>
+                            <p>
+                                <label for="email">Email* :</label>
+                                <input type="text" id="email" name="email" placeholder="Votre email" required />
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>
+                                Votre demande
+                            </legend>
+                            <p>
+                                <label for="typeDemande">Type de demande :</label> 
+                                <select id="typeDemande" name="typeDemande">
+                                    <!-- <option value="">Choisissez le type de demande</option>-->
+                                    <optgroup label="Produit">
+                                        <option value="DevisProduit">Demande de devis</option>
+                                        <option value="InfoProduit">Information produit</option>
+                                    </optgroup>
+                                    <optgroup label="Prestation">
+                                        <option value="DevisPrestation" selected>Devis prestation</option>
+                                        <option value="InfoPrestation">Info prestation</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+                            <p>
+                                Format de réponse :
+                            </p>
+                            <p>
+                                <input type="checkbox" name="telephone" id="telephone" />
+                                <label for="telephone">Par téléphone</label><br />
+
+                                <input type="checkbox" name="mail" id="mail" />
+                                <label for="mail">Par email</label><br />
+
+                                <input type="checkbox" name="fax" id="fax" />
+                                <label for="fax">Par fax</label><br />
+
+                                <input type="checkbox" name="courier" id="courier" />
+                                <label for="courier">Par courier</label>
+                            </p>
+                            <p>
+                                Type de client
+                            </p>
+                            <p>
+                                <input type="radio" name="client" id="clientPhysique" value="PP" checked />
+                                <label for="clientPhysique">Personne physique</label><br />
+
+                                <input type="radio" name="client" id="clientMorale" value="PM" />
+                                <label for="clientPhysique">Personne morale</label><br />
+                            </p>
+                        </fieldset>
+                        <p>
+                            Les champs marqués d'un * sont obligatoire pour l'enregistrement de votre demande.
+                        </p>
+                        <p>
+                            <button type="submit">
+                                Envoyer
+                            </button>
+                        </p>
+                    </form>
+                </main>
+            </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
