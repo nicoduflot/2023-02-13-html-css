@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta description="Page et site exemple de la formation 'Premiers pas en création de site web'" />
     <title>Formation premiers pas en création de sites web</title>
+    <style>
+        #exempleMoinsPire{
+            color: darkgray;
+        }
+
+        #exempleMoinsPire{
+            color: darkred;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
@@ -45,6 +55,141 @@
                     </h2>
                 </header>
                 <main>
+                    <h3>CSS : Cascading Style Sheets</h3>
+                    <p>
+                        Feuilles de style en cascade.
+                    </p>
+                    <p style="color: red;">
+                        La pire façon de faire du CSS
+                    </p>
+                    <p id="exempleMoinsPire">
+                        La moins pire façon de faire du CSS
+                    </p>
+                    <p class="rouge-gras">
+                        La "meilleure" (hors landing page et newsletter) façon de faire du CSS, c'est d'écrire le style sur un fichier à part, que l'on liera sur toutes les pages du site.
+                    </p>
+                    <h3>Les sélecteurs</h3>
+                    <p>
+                        Les sélecteurs permettent de sélectionner le ou les éléments qui vont appliquer les 
+                        règles CSS, il en existe plusieurs :
+                    </p>
+                    <ul>
+                        <li>Sélection par balise : le nom d'une balise</li>
+                        <li>Sélection par id : un élément possédant un id peut être sélectionné</li>
+                        <li>Sélection par classe : un élément contenant la classe</li>
+                        <li>Sélection en cascade : une suite des précédent sélecteurs pour appliquer les règles 
+                            sur des éléments ou des groupes d'éléments particuliers
+                        </li>
+                    </ul>
+                    <h3>Exemple de sélecteurs</h3>
+                    <p>
+                        Un sélecteur pour agir sur tous les paragraphes
+                    </p>
+                    <pre>
+p{
+    color: black;
+}
+                    </pre>
+                    <p>
+                        Un sélecteur pour agir sur un élément ayant l'id testId
+                    </p>
+                    <pre>
+#testId{
+    color: black;
+}
+                    </pre>
+                    <p>
+                        Un sélecteur pour agir sur un élément ayant la classe bilbo
+                    </p>
+                    <pre>
+.bilbo{
+    color: black;
+}
+                    </pre>
+                    <p>
+                        On peu combiner les sélecteurs.
+                        Un sélecteur pour agir sur un élément paragraphe ayant la classe bilbo
+                    </p>
+                    <pre>
+p.bilbo{
+    color: black;
+}
+                    </pre>
+                    <p>
+                        On peut identifier des éléments à l'intérieur d'autres élément.
+                        Un sélecteur pour agir sur un élément li à l'intérieur d'article
+                    </p>
+                    <pre>
+article li{
+    color: black;
+}
+                    </pre>
+                    <p>
+                        On peut identifier des éléments enfants direct d'autres élément.
+                        Un sélecteur pour agir sur un élément li enfant direct d'un ul et d'un main
+                    </p>
+                    <pre>
+main > ul > li{
+    color: black;
+}
+                    </pre>
+                    <p>
+                        Plusieurs sélecteurs pour une règles de style.
+                        Un style appliqué aux élément paragraphe, li et h2.
+                    </p>
+                    <pre>
+p, li, h2{
+    color: black;
+}
+                    </pre>
+                    <h2>Les dimenssions en CSS</h2>
+                    <p>
+                        ATTENTION /!\
+                    </p>
+                    <p>
+                        Par défaut, les tailles des boîtes représentants les éléments html sont intérprétées par le contenu, elle ne prennent pas en compte la largeur des bordures et les marges intérieurs.
+                    </p>
+                    <p>
+                        Il faut utiliser le sélecteur général * (qui impacte TOUS les éléments de la page) et préciser que le calcul des tailles de boiîtes se fasse depuis l'extérieur des bordure, incluant donc la largeur de celles-ci et les marge intérieures.
+                    </p>
+                    <div class="carre">
+
+                    </div>
+                    <pre>
+*{
+    box-sizing: border-box;
+}
+                    </pre>
+                    <h3>Les unités de mesures les plus utilisés</h3>
+                    <ul>
+                        <li>
+                            px => pixel (généralement utilisé pour les largeur et hauter d'éléments, déconseillé pour les polices de caractère)
+                        </li>
+                        <li>
+                            % => la taille de l'élément est calculée par rapport àl'espace disponible, donnée par l'élément parent
+                        </li>
+                        <li>
+                            em => cadratin (la taille de l'élément est fixé par raaport à la taille du parent)
+                        </li>
+                        <li>
+                            rem => cadratin racine (la taille est calculée par rapport à la base de référence)
+                        </li>
+                    </ul>
+                    <p>
+                        Rincevent
+                    </p>
+                    <p class="a2em">
+                        Rincevent<br/>
+                        <span class="a2em">
+                            Rincevent
+                        </span>
+                    </p>
+                    <p class="a2rem">
+                        Rincevent<br/>
+                        <span class="a2rem">
+                            Rincevent
+                        </span>
+                    </p>
                     
                 </main>
                 <footer>

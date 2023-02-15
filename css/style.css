@@ -1,0 +1,47 @@
+/* déclarations générales */
+/*  * est le sélecteur qui représente TOUS les éléments d'une page  */
+*{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: darkred;
+}
+
+/* déclarations de classes */
+.rouge-gras{
+    color: #8b0000;
+    font-weight: bold;
+}
+
+.carre{
+    margin: 10px;
+    border: 3px solid darkblue;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.a2em{
+    font-size: 2em;
+}
+
+.a2rem{
+    font-size: 2rem;
+}
+
+
+/* déclaration des id */
+#exempleMoinsPire{
+    color: rgb(138, 43, 226);
+}
+
+/* déclarations de structure */
+body{
+    /* la propriété pour définir la police de caractère */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body > main{
+    width: 80%;
+}
