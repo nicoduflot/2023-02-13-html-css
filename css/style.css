@@ -4,8 +4,18 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6{
+h2, h3, h4, h5, h6{
     color: darkred;
+}
+
+h1{
+    color: white;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* déclarations de classes */
@@ -70,6 +80,16 @@ h1, h2, h3, h4, h5, h6{
     opacity: 50%;
 }
 
+.toutEnMajuscule{
+    text-transform: uppercase;
+}
+
+.drapeau200{
+    width: 200px;
+    text-align: justify;
+    text-align-last: center;
+}
+
 /* déclaration des id */
 #exempleMoinsPire{
     color: rgb(77, 23, 128);
@@ -80,8 +100,62 @@ h1, h2, h3, h4, h5, h6{
 body{
     /* la propriété pour définir la police de caractère */
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+body > header, body > nav{
+    background-color: black;
+}
+
+body > nav > div{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > nav ul{
+    line-height: 2rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+body > nav ul li a{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+body > nav ul li a:hover{
+    background-color: white;
+    color: black;
 }
 
 body > main{
     width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+body > main ul{
+    list-style-type: circle;
+}
+
+/* exemple de liste à l'horizontale à l'aide de la flottaison */
+/*
+body > nav ul li{
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+body > main{
+    width: 80%;
+    clear: both;
+}
+*/
