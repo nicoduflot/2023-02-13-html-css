@@ -18,6 +18,10 @@ h1{
     margin-right: auto;
 }
 
+img{
+    max-width: 100%;
+}
+
 /* déclarations de classes */
 .rouge-gras{
     color: #8b0000;

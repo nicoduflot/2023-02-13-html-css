@@ -1,0 +1,11 @@
+/* css de surcharge pour la page d'accueil */
+
+body > main > section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+body > main > section > *{
+    width: 50%;
+}
