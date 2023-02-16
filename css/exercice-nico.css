@@ -1,0 +1,153 @@
+/* CSS a compléter pour l'exercice de mise en page */
+*{
+    box-sizing: border-box;
+}
+
+/* déclarations générales */
+
+body{
+    font-family:'Lucida Sans', 'Geneva', Verdana, sans-serif;
+    margin: 0;
+}
+
+p{
+    line-height: 1.6rem;
+}
+
+ul{
+    line-height: 2rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* classes */
+
+.illustration{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.left{
+    float: left;
+    clear: left;
+    margin-right: 0.5rem;
+}
+
+.right{
+    float: right;
+    clear: right;
+    margin-left: 0.5rem;
+}
+
+
+/* css sur la structure */
+
+body > header{
+    background-color: #c02126;
+    color: white;
+}
+
+body > header h1{
+    text-align: center;
+    font-family: 'Impact', 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+body > header p{
+    text-align: center;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+body > nav > div, 
+body > main, 
+body > footer > div{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > nav{
+    background-color: #c02126;
+}
+
+body > nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+body > nav li{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+body > nav li::marker{
+    content: "";
+    font-weight: bold;
+}
+
+body > nav a, 
+body > footer a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+body > nav a::before{
+    content: " < ";
+    font-weight: bold;
+}
+
+body > nav a::after{
+    content: " > ";
+    font-weight: bold;
+}
+
+
+body > nav a:hover{
+    background-color:white;
+    color: #c02126;
+}
+
+body > main article aside{
+    width: 300px;
+    border: 1px solid #c02126;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+body > footer{
+    background-color: #c02126;
+}
+
+body > footer > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+body > footer > div ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
