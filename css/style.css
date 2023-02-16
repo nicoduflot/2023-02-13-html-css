@@ -18,9 +18,11 @@ h1{
     margin-right: auto;
 }
 
-img{
+img, video{
     max-width: 100%;
 }
+
+
 
 /* déclarations de classes */
 .rouge-gras{
