@@ -1,0 +1,54 @@
+.translate{
+    transition: transform 1s;
+}
+
+.translate:hover{
+    transform: rotate(10deg) translate(10px, 10px) ;
+}
+
+.rectangle{
+    height: 100px;
+    width: 250px;
+    background-color: blueviolet;
+    transition: width 1s, background-color 2s, transform 1s;
+}
+
+.rectangle:hover{
+    width: 100px;
+    background-color: black;
+    transform: rotate(10deg) scale(2);
+}
+
+.polling_message {
+    color: white;
+    float: left;
+    margin-right: 2%;
+  }
+  
+  .view_port {
+    background-color: black;
+    height: 25px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .cylon_eye {
+    background-color: red;
+    background-image:         linear-gradient(to right, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+    color: white;
+    height: 100%;
+    width: 20%;
+    animation: 4s linear 0s infinite alternate move_eye;
+  }
+  
+@keyframes move_eye {
+    from {
+        margin-left:-20%;
+    } 
+    to { margin-left:100%; }
+}
+
+.big-box{
+    width: 150px;
+    height: 150px;
+}
