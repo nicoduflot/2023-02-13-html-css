@@ -1,3 +1,14 @@
+/*
+:root{
+    --animate-duration: 2s;
+}
+*/
+
+#bounceAnimate{
+    --animate-duration: 2s;
+}
+
+
 .translate{
     transition: transform 1s;
 }
@@ -51,4 +62,17 @@
 .big-box{
     width: 150px;
     height: 150px;
+}
+
+.carre3{
+
+        height: 100px;
+        width: 100px;
+        background-color: blueviolet;
+        transform: rotate(45deg);
+        margin: 100px;
+}
+
+.coucou{
+    transform: rotate(-45deg) translateX(-10px);
 }
